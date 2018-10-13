@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var burgerControl =require("../models/burger.js");
-
+console.log('hello from burgers_Controller.js')
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function (req, res) {
     burgerControl.all(function (data) {
